@@ -26,10 +26,10 @@ else
     end
   
     #zip up the files
-    %x{zip -r #{store_in}.zip #{store_in}}
+    #%x{zip -r #{store_in}.zip #{store_in}}
   
     #remove the old directory
-    FileUtils.rm_r "#{store_in}"
+    #FileUtils.rm_r "#{store_in}"
   else
     puts 'No changes to export in this directory. Move to the root of your branch/trunk and try again.'
   end
